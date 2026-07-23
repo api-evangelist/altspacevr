@@ -1,0 +1,64 @@
+generated: '2026-07-20'
+method: probed
+source: Direct HTTP probes of altvr.com and its developer subdomains on 2026-07-20.
+description: >-
+  Results of probing the /.well-known/ discovery surface for the AltspaceVR
+  domain. AltspaceVR shut down on 2023-03-10 and altvr.com now issues a
+  cross-host redirect to https://www.microsoft.com/. Every /.well-known/ path
+  therefore returns HTTP 200 only because the redirect lands on the Microsoft
+  corporate homepage — none of them served a real, correctly-typed discovery
+  document, so nothing was saved verbatim. The developer, docs, api, account
+  and status subdomains no longer resolve at all. This is a genuine negative
+  result, not a fetch failure.
+hosts:
+  - host: https://altvr.com
+    note: >-
+      All paths 30x-redirect off-host to https://www.microsoft.com/ and return
+      that HTML homepage. Recorded as redirected-away, not present.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        final_url: https://www.microsoft.com/
+        present: false
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 301
+        final_url: https://www.microsoft.com/
+        present: false
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        final_url: https://www.microsoft.com/
+        present: false
+        file: null
+      - path: /.well-known/api-catalog
+        status: 200
+        final_url: https://www.microsoft.com/
+        present: false
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        final_url: https://www.microsoft.com/
+        present: false
+        file: null
+      - path: /llms.txt
+        status: 200
+        final_url: https://www.microsoft.com/
+        present: false
+        file: null
+  - host: https://developer.altvr.com
+    status: 000
+    note: DNS does not resolve. Former AltspaceSDK developer portal.
+    documents: []
+  - host: https://docs.altvr.com
+    status: 000
+    note: DNS does not resolve.
+    documents: []
+  - host: https://api.altvr.com
+    status: 000
+    note: DNS does not resolve.
+    documents: []
+  - host: https://account.altvr.com
+    status: 000
+    note: DNS does not resolve.
+    documents: []

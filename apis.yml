@@ -1,21 +1,79 @@
 aid: altspacevr
-name: AltspaceVR *
-description: 'AltspaceVR * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+name: AltspaceVR
+description: 'AltspaceVR was a social virtual reality platform founded in 2013 where
+  people gathered in shared 3D spaces for live events, meetups, classes, comedy shows
+  and conferences. Google Ventures (GV) was an early investor. Microsoft acquired the
+  company in 2017 and folded it into its Mixed Reality division, then announced in
+  January 2023 that the platform would close, shutting it down permanently on 2023-03-10
+  in favor of Microsoft Mesh. AltspaceVR published no hosted HTTP API; its developer
+  surface was the Mixed Reality Extension (MRE) SDK for building server-hosted 3D world
+  extensions in Node.js, plus the earlier web-based AltspaceSDK. Every SDK repository
+  is now archived and altvr.com redirects to microsoft.com. This profile is retained
+  as a historical record of a terminated platform, not as a live integration target.'
 url: https://raw.githubusercontent.com/api-evangelist/altspacevr/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/7229981?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: shutdown
+x-shutdown-date: '2023-03-10'
+x-acquired-by: Microsoft
+x-superseded-by: Microsoft Mesh
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Virtual Reality
+- Social VR
+- Mixed Reality
+- Metaverse
+- Gaming
+- Discontinued
 apis: []
+common:
+- type: DomainSecurity
+  url: security/altspacevr-domain-security.yml
+- url: https://altvr.com/
+  type: Website
+- url: https://github.com/AltspaceVR
+  type: GitHubOrganization
+- url: https://github.com/microsoft/mixed-reality-extension-sdk
+  type: SourceCode
+- url: https://en.wikipedia.org/wiki/AltspaceVR
+  type: Documentation
+- url: packages/altspacevr-packages.yml
+  type: Packages
+- url: packages/altspacevr-packages.yml
+  type: SDKs
+- url: lifecycle/altspacevr-lifecycle.yml
+  type: Lifecycle
+- url: lifecycle/altspacevr-lifecycle.yml
+  type: Deprecation
+- url: well-known/altspacevr-well-known.yml
+  type: WellKnown
+- url: llms/altspacevr-llms.txt
+  type: LLMsTxt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

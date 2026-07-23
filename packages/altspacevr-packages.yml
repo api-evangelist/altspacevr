@@ -1,0 +1,89 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://registry.npmjs.org/@microsoft/mixed-reality-extension-sdk,
+  https://registry.npmjs.org/@microsoft/mixed-reality-extension-altspacevr-extras,
+  https://registry.npmjs.org/altspacevr-behaviors,
+  https://github.com/microsoft/mixed-reality-extension-sdk,
+  https://github.com/AltspaceVR/AltspaceSDK
+description: >-
+  Client libraries published for AltspaceVR. AltspaceVR was acquired by
+  Microsoft in 2017 and the platform was permanently shut down on 2023-03-10,
+  so every package below is END-OF-LIFE and its source repository is archived
+  on GitHub. They are recorded here as the historical, verifiable developer
+  surface of the platform, not as a live integration path. Verified against the
+  npm registry (registry.npmjs.org) and the GitHub REST API on 2026-07-20; the
+  latest real publish of the Mixed Reality Extension SDK was 0.21.0 on
+  2021-04-08.
+status: end-of-life
+platform_shutdown: '2023-03-10'
+packages:
+  - language: javascript
+    registry: npm
+    name: "@microsoft/mixed-reality-extension-sdk"
+    url: https://www.npmjs.com/package/@microsoft/mixed-reality-extension-sdk
+    source: https://github.com/microsoft/mixed-reality-extension-sdk
+    install: npm install @microsoft/mixed-reality-extension-sdk
+    official: true
+    license: MIT
+    latest_version: 0.21.0
+    first_published: '2018-12-04'
+    last_published: '2021-04-08'
+    archived: true
+    status: end-of-life
+    note: >-
+      The Mixed Reality Extension (MRE) SDK let developers build server-hosted
+      3D world extensions for AltspaceVR in Node.js. Source repo archived by
+      Microsoft (last push 2022-04-09).
+  - language: javascript
+    registry: npm
+    name: "@microsoft/mixed-reality-extension-altspacevr-extras"
+    url: https://www.npmjs.com/package/@microsoft/mixed-reality-extension-altspacevr-extras
+    source: https://github.com/microsoft/mixed-reality-extension-sdk
+    install: npm install @microsoft/mixed-reality-extension-altspacevr-extras
+    official: true
+    license: MIT
+    latest_version: 0.20.0
+    archived: true
+    status: end-of-life
+    note: >-
+      Companion package exposing AltspaceVR-specific host behaviors to MRE
+      developers.
+  - language: javascript
+    registry: npm
+    name: altspacevr-behaviors
+    url: https://www.npmjs.com/package/altspacevr-behaviors
+    source: https://github.com/NGenesis/altspacevr-behaviors
+    install: npm install altspacevr-behaviors
+    official: false
+    license: MIT
+    latest_version: 1.1.5
+    first_published: '2018-07-11'
+    last_published: '2018-09-03'
+    status: end-of-life
+    note: >-
+      Third-party (community, npm maintainer "ngenesis") helper behaviors and
+      A-Frame components for the older AltspaceSDK. Not published by
+      AltspaceVR or Microsoft.
+source_repositories:
+  - name: AltspaceVR/AltspaceSDK
+    url: https://github.com/AltspaceVR/AltspaceSDK
+    description: Software Development Kit for AltspaceVR (the original, pre-MRE web/A-Frame SDK)
+    license: MIT
+    stars: 162
+    archived: true
+    homepage: https://developer.altvr.com/
+    note: Homepage developer.altvr.com no longer resolves (DNS failure probed 2026-07-20).
+  - name: microsoft/mixed-reality-extension-sdk
+    url: https://github.com/microsoft/mixed-reality-extension-sdk
+    stars: 142
+    archived: true
+  - name: microsoft/mixed-reality-extension-sdk-samples
+    url: https://github.com/microsoft/mixed-reality-extension-sdk-samples
+    stars: 93
+    archived: true
+  - name: microsoft/mixed-reality-extension-unity
+    url: https://github.com/microsoft/mixed-reality-extension-unity
+    stars: 61
+    archived: true
+    description: Unity library for adding MRE user-generated-content capability to host apps

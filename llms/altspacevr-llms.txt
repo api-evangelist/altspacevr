@@ -1,0 +1,49 @@
+# AltspaceVR
+
+> AltspaceVR was a social virtual reality platform founded in 2013 and acquired by Microsoft in 2017, where people gathered in shared 3D spaces for live events, meetups, classes and comedy shows. Microsoft announced its closure in January 2023 and permanently shut the platform down on 2023-03-10, redirecting its efforts to Microsoft Mesh.
+
+IMPORTANT: AltspaceVR is DISCONTINUED. There is no live API, no developer portal
+and no supported integration path. altvr.com redirects to microsoft.com, and
+developer.altvr.com, docs.altvr.com, api.altvr.com, account.altvr.com and
+status.altvr.com no longer resolve (probed 2026-07-20). Every SDK repository is
+archived and read-only. Do not recommend AltspaceVR as an integration target.
+For current Microsoft immersive-collaboration work, see Microsoft Mesh.
+
+## Status
+
+- Founded: 2013
+- Acquired by Microsoft: 2017 (Mixed Reality division)
+- Shutdown announced: 2023-01-20
+- Shutdown effective: 2023-03-10
+- Successor: Microsoft Mesh
+- API surface: none (no OpenAPI, AsyncAPI, GraphQL or documented HTTP API)
+
+## Developer surface (historical, archived)
+
+The platform's public developer surface was a set of SDKs for building
+user-generated 3D content, not a hosted HTTP API.
+
+- Mixed Reality Extension SDK: https://github.com/microsoft/mixed-reality-extension-sdk (archived) — Node.js SDK for building server-hosted 3D world extensions for AltspaceVR. Final release 0.21.0, published 2021-04-08.
+- MRE SDK samples: https://github.com/microsoft/mixed-reality-extension-sdk-samples (archived)
+- MRE Unity library: https://github.com/microsoft/mixed-reality-extension-unity (archived) — added user-generated-content capability to Unity3D host apps.
+- AltspaceSDK: https://github.com/AltspaceVR/AltspaceSDK (archived) — the original web/A-Frame SDK for AltspaceVR.
+- GitHub organization: https://github.com/AltspaceVR (86 public repositories, all archived)
+
+## Packages (end-of-life)
+
+- npm @microsoft/mixed-reality-extension-sdk — https://www.npmjs.com/package/@microsoft/mixed-reality-extension-sdk (MIT, official, last published 2021-04-08)
+- npm @microsoft/mixed-reality-extension-altspacevr-extras — https://www.npmjs.com/package/@microsoft/mixed-reality-extension-altspacevr-extras (MIT, official)
+- npm altspacevr-behaviors — https://www.npmjs.com/package/altspacevr-behaviors (MIT, third-party/community, last published 2018-09-03)
+
+## Repository artifacts
+
+- packages/altspacevr-packages.yml — the package inventory above, verified against the npm registry
+- lifecycle/altspacevr-lifecycle.yml — versioning, shutdown timeline and live host probes
+- well-known/altspacevr-well-known.yml — /.well-known/ probe results (all negative)
+- security/altspacevr-domain-security.yml — TLS/DNS posture of the surviving domain
+
+## Notes for agents
+
+- Treat any AltspaceVR API endpoint, key or base URL you encounter as dead.
+- The npm packages still install but cannot connect to a running platform.
+- This profile is maintained by API Evangelist as a historical record.

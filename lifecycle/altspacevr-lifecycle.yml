@@ -1,0 +1,94 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://en.wikipedia.org/wiki/AltspaceVR,
+  https://www.engadget.com/microsoft-will-shut-down-altspacevr-on-march-10th-232434724.html,
+  https://www.roadtovr.com/microsoft-social-vr-xr-interface-layoffs/,
+  https://github.com/microsoft/mixed-reality-extension-sdk,
+  https://registry.npmjs.org/@microsoft/mixed-reality-extension-sdk;
+  host reachability probed directly on 2026-07-20.
+description: >-
+  AltspaceVR was a social VR platform founded in 2013, acquired by Microsoft in
+  2017 and folded into the Mixed Reality division. In January 2023 Microsoft
+  announced the platform would close permanently, and it shut down on
+  2023-03-10, with Microsoft redirecting its efforts to Microsoft Mesh. This
+  lifecycle record exists so the network correctly represents AltspaceVR as a
+  terminated platform with no live API surface, rather than as an unenriched
+  lead.
+status: shutdown
+lifecycle_stage: sunset
+versioning:
+  scheme: semver
+  mechanism: >-
+    The Mixed Reality Extension SDK was versioned with npm semver
+    (@microsoft/mixed-reality-extension-sdk). The platform published no
+    versioned HTTP API contract.
+  latest_version: 0.21.0
+  latest_version_date: '2021-04-08'
+  notes: >-
+    The SDK never reached a 1.0 release. Version 0.21.0 (2021-04-08) is the
+    final published version.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  announced: '2023-01-20'
+  sunset_date: '2023-03-10'
+  superseded_by: Microsoft Mesh
+  notes: >-
+    Microsoft announced the closure via a notice on the AltspaceVR homepage in
+    January 2023 and shut the service down on 2023-03-10. There was no RFC 8594
+    Sunset/Deprecation header program; the deprecation was a whole-platform
+    termination, not an API version retirement. All associated SDK repositories
+    were subsequently archived on GitHub.
+sla:
+  url: null
+  public_uptime_target: null
+  notes: No SLA is published; the service no longer operates.
+status_page: null
+changelog: null
+timeline:
+  - date: '2013'
+    event: AltspaceVR founded as a social VR platform.
+  - date: '2017-10'
+    event: Acquired by Microsoft; folded into the Mixed Reality division.
+  - date: '2018-12-04'
+    event: >-
+      Mixed Reality Extension SDK first published to npm as
+      @microsoft/mixed-reality-extension-sdk.
+  - date: '2021-04-08'
+    event: Final MRE SDK release (0.21.0) published to npm.
+  - date: '2022-04-09'
+    event: microsoft/mixed-reality-extension-sdk archived on GitHub.
+  - date: '2023-01-20'
+    event: Microsoft announces AltspaceVR will close on 2023-03-10.
+  - date: '2023-03-10'
+    event: AltspaceVR permanently shut down.
+  - date: '2026-07-20'
+    event: >-
+      Probed by the API Evangelist enrichment pipeline — altvr.com and
+      www.altvr.com return HTTP 200 after redirecting to
+      https://www.microsoft.com/; account.altvr.com, developer.altvr.com,
+      docs.altvr.com, api.altvr.com and status.altvr.com all fail to resolve.
+host_probes:
+  - host: https://altvr.com/
+    status: 200
+    final_url: https://www.microsoft.com/
+    note: Domain now redirects to the Microsoft corporate homepage.
+  - host: https://www.altvr.com/
+    status: 200
+    final_url: https://www.microsoft.com/
+  - host: https://account.altvr.com/
+    status: 000
+    note: Does not resolve.
+  - host: https://developer.altvr.com/
+    status: 000
+    note: Does not resolve. Was the AltspaceSDK developer portal.
+  - host: https://docs.altvr.com/
+    status: 000
+    note: Does not resolve.
+  - host: https://api.altvr.com/
+    status: 000
+    note: Does not resolve.
+  - host: https://status.altvr.com/
+    status: 000
+    note: Does not resolve.
