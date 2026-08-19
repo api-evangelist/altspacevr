@@ -33,7 +33,7 @@ x-status: shutdown
 x-shutdown-date: '2023-03-10'
 x-acquired-by: Microsoft
 x-superseded-by: Microsoft Mesh
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
