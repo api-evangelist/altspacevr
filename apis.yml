@@ -12,15 +12,18 @@ description: 'AltspaceVR was a social virtual reality platform founded in 2013 w
   as a historical record of a terminated platform, not as a live integration target.'
 url: https://raw.githubusercontent.com/api-evangelist/altspacevr/refs/heads/main/apis.yml
 deliveryModel:
-  model: unknown
+  model: library
+  license_evidence:
+    not_product:
+    - microsoft/mixed-reality-extension-sdk
   open_source: unknown
   commercial: false
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
+  label: Library · distributed through package registries, no callable service
   confidence: low
   source:
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: unknown
@@ -40,7 +43,7 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
-x-status: shutdown
+x-status: defunct
 x-shutdown-date: '2023-03-10'
 x-acquired-by: Microsoft
 x-superseded-by: Microsoft Mesh
@@ -56,6 +59,7 @@ tags:
 - Metaverse
 - Gaming
 - Discontinued
+- Defunct
 apis: []
 common:
 - type: DomainSecurity
