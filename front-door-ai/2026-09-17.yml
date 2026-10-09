@@ -1,0 +1,32 @@
+# Front Door AI Index — altspacevr — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: altspacevr
+  lexicon_version: '1.0'
+  probed_at: '2026-09-25'
+  host: altvr.com
+  final_host: www.microsoft.com
+  ownership: own
+  owner: altspacevr
+  shares_host_with: null
+  inherited_from: null
+  alias_of: null
+  verdict: scored
+  score: 30
+  band: 6
+  band_label: dominant
+  host_score: 30
+  density: 29.01
+  words: 1034
+  tiers:
+    agentic: 10
+    core: 20
+    model: 0
+  ambiguous: 1
+  top_terms:
+    AI: 20
+    copilot: 8
+    AI agent: 1
+    agent: 1
+    agentic: 1
